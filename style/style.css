@@ -48,7 +48,6 @@ header button {
 #info-board {
     display: flex;
     height: 295px;
-    width: 328px;
     background-color: white;
     border-radius: 20px;
     flex-direction: column;
