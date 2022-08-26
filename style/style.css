@@ -20,12 +20,18 @@ header h2 {
     font-weight: 500;
 }
 
+#ip-input{
+    width:86%;
+    margin: auto;
+
+
+}
 header input {
 
     height: 58px;
-    width: 240px;
+    width: 75%;
     font-size: 18px;
-    padding-left: 30px;
+    padding-left: 8%;
     outline: none;
     border: 0;
     border-radius: 20px 0px 0px 20px;
@@ -37,7 +43,7 @@ header input {
 
 header button {
     height: 58px;
-    width: 58px;
+    width: 17%;
     background-color: black;
     color: white;
     font-size: 18px;
@@ -81,7 +87,7 @@ header button {
  }
 
  #map {
-    height: 500px;
+    height: 100vh;
     z-index: -1;
  }
  
