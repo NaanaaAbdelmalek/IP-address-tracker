@@ -79,3 +79,9 @@ header button {
  .board-part h2 {
     font-weight: 500;
  }
+
+ #map {
+    height: 500px;
+    z-index: -1;
+ }
+ 
