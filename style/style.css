@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Rubik';
+    font-size:1.125rem;
 }
 
 header {
@@ -20,35 +21,35 @@ header h2 {
     font-weight: 500;
 }
 
-#ip-input{
+#ip-search {
     width:86%;
     margin: auto;
-
-
 }
-header input {
 
+#ip-search input {
     height: 58px;
     width: 75%;
-    font-size: 18px;
+    font-size:1.125rem;
+    cursor: pointer;
     padding-left: 8%;
     outline: none;
     border: 0;
-    border-radius: 20px 0px 0px 20px;
-
+    border-radius: 14px 0px 0px 14px;
 }
+
 ::placeholder {
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
-header button {
+#ip-search button {
     height: 58px;
     width: 17%;
+    cursor: pointer;
     background-color: black;
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
     border: 0;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 14px 14px 0px;
 }
 
 #info-board {
@@ -63,6 +64,7 @@ header button {
     top: 166px;
     left: 7% ;
     right:7% ;
+    z-index:2;
 }
 
 #info-board > div:first-child {
@@ -78,16 +80,94 @@ header button {
  .board-part p{
     color: hsl(0, 0%, 59%);
     padding-bottom: 3px;
-    font-size: 11PX;
+    font-size: 0.6875rem;
     font-weight: 500;
     letter-spacing: 3px;
  }
  .board-part h2 {
     font-weight: 500;
+    display: inline;
  }
 
  #map {
     height: 100vh;
-    z-index: -1;
+    z-index: 1;
  }
+
  
+ /* Media Query for Laptop and Desktop (Large screens included) */
+ @media only screen and (min-width: 1025px) and (max-width:1440px) {
+
+    header {
+        max-height: 279px;
+        background-size: 100% 100%;
+    }
+
+    #ip-search {
+        width: 38.6%;
+    }
+
+    #ip-search input {
+        max-width: 85%;
+        padding-left: 4%;
+    }
+
+    ::placeholder {
+        font-size: 0.9375rem;
+    }
+    
+    #ip-search button {
+        width: 11%; 
+    }
+
+    #info-board { 
+        flex-direction: row;
+        align-items: baseline;
+        height: 161px;
+        top: 199px;
+        left: 12.23%;
+        right: 12.23%;     
+    }
+    
+    #info-board > div:first-child {
+        padding-top: 0px;
+    }
+
+    #info-board > div:last-child{
+        padding-bottom: 0px;
+    }
+
+    .board-part {
+        text-align: left;
+        align-self: stretch;
+        width: 25%;
+        margin-top: 35px;
+        margin-left: 33px;
+        margin-right: 33px;
+    }
+
+    .right-bar {
+        position:relative;
+    }
+        
+    .right-bar::after {
+        content: '';
+        position: absolute;
+        background-color: hsl(0, 0%, 85%);
+        width:1px;
+        height: 63%;
+        top: 5px;
+        left: -33px;  
+    }
+
+    .board-part p{
+        padding-bottom: 18px;
+        font-weight: 700;
+        letter-spacing: 1px;
+     }
+     .board-part h2 {
+        font-weight: 500;
+        display: block;
+     }
+
+ }

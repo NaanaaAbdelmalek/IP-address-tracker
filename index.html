@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -14,16 +14,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   
-     <!-- Css of Leafletjs map -->
- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
- integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
- crossorigin=""/>
-  <!-- JS of Leafletjs map -->
-<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-crossorigin=""></script>
- 
+  <!-- Css of Leafletjs map -->
 
+  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+  crossorigin=""/> -->
+
+  <link rel="stylesheet" href="leaflet\leaflet.css" />
+  
+
+  <!-- JS of Leafletjs map -->
+
+  <!-- <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script> -->
+
+  <script src="leaflet\leaflet.js"></script>
+ 
   <title>Frontend Mentor | IP Address Tracker</title>
 </head>
 
@@ -32,8 +39,8 @@ crossorigin=""></script>
   <!-- Header section which include the input that hold the IP Address -->
   <header>
     <h2>IP Address Tracker</h2>
-  <div id="ip-input">
-    <input type="text" placeholder="Search for any IP address or domain"><button>></button>
+  <div id="ip-search">
+    <input id="ip-input" type="text" placeholder="Search for any IP address or domain"><button id="search-button">></button>
   </div>
   </header>
 
@@ -42,38 +49,37 @@ crossorigin=""></script>
 
     <div class="board-part">
       <p>IP ADDRESS</p>
-      <h2>192.212.174.101</h2>
+      <h2></h2>
     </div>
 
-    <div class="board-part">
+    <div class="board-part right-bar">
       <p>LOCATION</p>
-      <h2>Brooklyn, NY 10001</h2>
+      <h2></h2>
+      <h2></h2>
     </div>
 
-    <div class="board-part">
+    <div class="board-part right-bar">
       <p>TIMEZONE</p>
-      <h2>UTC -05:00</h2>
+     <h2></h2>
     </div>
 
-    <div class="board-part">
+    <div class="board-part right-bar">
       <p>ISP</p>
-      <h2>SpaceX Starlink</h2>
+      <h2></h2>
     </div>
   
   </div>
   
   <!-- Map div -->
-  <div id="map">
-    <script src="js/map.js"></script>
-  </div>
+  <div id="map"></div>
 
 
-
-
-  
-  <!-- <div class="attribution">
+  <!-- <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="#">Naanaa Abdel Malek</a>.
+  </footer> -->
+
+  <script src="js/App.js"></script>
+
 </body>
 </html>
