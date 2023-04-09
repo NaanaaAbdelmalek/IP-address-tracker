@@ -96,7 +96,7 @@ header h2 {
 
  
  /* Media Query for Laptop and Desktop (Large screens included) */
- @media only screen and (min-width: 1025px) and (max-width:1440px) {
+ @media only screen and (min-width: 961px) {
 
     header {
         max-height: 279px;
@@ -104,7 +104,8 @@ header h2 {
     }
 
     #ip-search {
-        width: 38.6%;
+        width: 38%;
+        max-width: 41.0875rem;
     }
 
     #ip-search input {
@@ -123,7 +124,9 @@ header h2 {
     #info-board { 
         flex-direction: row;
         align-items: baseline;
-        height: 161px;
+        margin-inline: auto;
+        height: auto;
+        max-width: 69.375rem;
         top: 199px;
         left: 12.23%;
         right: 12.23%;     
@@ -144,6 +147,7 @@ header h2 {
         margin-top: 35px;
         margin-left: 33px;
         margin-right: 33px;
+        margin-bottom: 35px;
     }
 
     .right-bar {

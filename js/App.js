@@ -1,6 +1,6 @@
 // Variables declaration
-
-const link_requested = 'https://geo.ipify.org/api/v2/country,city?apiKey=at_vSnkFkVlFtyJwRZor8IauXyDuun0p';
+const api_key = 'at_WFBHrklKlfNYWIALJAGt1jnv7wJeA'
+const link_requested = `https://geo.ipify.org/api/v2/country,city?apiKey=${api_key}`;
 const ip_input = document.getElementById("ip-input");
 const search_button = document.getElementById("search-button");
 let marker;
